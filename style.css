@@ -1,0 +1,196 @@
+
+/* GENERAL PAGE DESIGN */
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    max-height: 100vh;
+    background-attachment: fixed;
+    color: #F5ECFF;
+    background: radial-gradient(ellipse at 15% 10%, #39204F 0%, transparent 40%),
+    radial-gradient(ellipse at 85% 85%, #292047 0%, transparent 45%),
+    linear-gradient(135deg, #100B18, #1B1028, #100B18);
+    
+}
+
+/* MAIN WEBSITE NAME */
+
+
+h1 {
+    font-weight: 900;
+    color: #fafbff;
+    font-family: inherit;
+     
+
+
+
+}
+
+
+.tagline{
+    color: #D6B477;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 0px;
+    margin-top: 5%;
+    
+
+
+
+}
+
+
+.motto{
+      color: #C5B2D8;
+      letter-spacing: 1px;
+      font-weight: 700;
+
+
+
+}
+
+
+/* INTRODUCTION */
+h4 {
+    font-size: 17px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+/* NAVIGATION BAR */
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #171326;
+    padding: 15px 25px;
+    border-radius: 30px;
+    gap: 20px;
+}
+
+/* EACH NAVIGATION ITEM */
+.nav-item {
+    position: relative;
+}
+
+/* NAVIGATION WORDS */
+.nav-item > a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 18px;
+    border-radius: 10px;
+
+    background-color: #b9c9ff;
+    transition: background-color 3s ease, color 3s ease;
+}
+
+/* WHEN MOUSE HOVERS */
+.nav-item > a:hover {
+    background-color: #172cba;
+    color: white;
+}
+
+/* POPUP BOX */
+.popup {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 12px;
+
+    width: 250px;
+    padding: 20px;
+
+    background-color: #8d4be2;
+    color: white;
+
+    border-radius: 12px;
+    box-shadow: 0 0 20px #6721c3;
+    z-index: 10;
+}
+
+/* SHOW THE SELECTED POPUP */
+.popup:target {
+    display: block;
+}
+
+/* POPUP CONTENT */
+.popup-content {
+    color: white;
+    padding: 10px;
+}
+
+/* POPUP HEADINGS */
+.popup-content h2 {
+    margin-top: 0;
+    color: white;
+}
+
+/* POPUP PARAGRAPHS */
+.popup-content p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* CLOSE BUTTON */
+.close {
+    float: right;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #171326;
+}
+
+/* CLOSE BUTTON HOVER */
+.close:hover {
+    color: white;
+}
+
+/* EMAIL LINK */
+body > a {
+    display: inline-block;
+    margin-top: 35px;
+    color: #4169e1;
+}
+
+/* SMALL SCREEN SUPPORT */
+@media (max-width: 600px) {
+    body {
+        margin: 15px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    nav {
+        gap: 5px;
+        padding: 10px;
+    }
+
+    .nav-item > a {
+        font-size: 13px;
+        padding: 10px 8px;
+    }
+
+    .popup {
+        width: 210px;
+    }
+}
+
+
+body > a {
+  color: #c2bcd3;
+  font-size: 25px;
+  font-weight: bolder;
+  border-radius: 10px;
+  margin: 10px;
+  padding:10px;
+  text-decoration:none ;
+  background-color: #172cba;
+  margin-top: 100%;
+
+}
